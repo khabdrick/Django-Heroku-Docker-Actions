@@ -11,8 +11,3 @@ RUN mkdir /proj
 WORKDIR /proj
 
 COPY ./proj /proj
-
-# Create user that can run our image on docker
-RUN adduser -D user
-
-USER user
