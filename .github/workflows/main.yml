@@ -16,4 +16,4 @@ jobs:
             heroku_app_name : ${{ secrets.HEROKU_APP_NAME }}
             heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
             heroku_email_address: 'alifax1998@gmail.com'
-            use_build_manifest: true
+            use_docker: true
