@@ -18,4 +18,4 @@ RUN adduser -D myuser
 USER myuser
 
 # run gunicorn
-CMD gunicorn proj.proj.wsgi:application --bind 0.0.0.0:$PORT
+CMD gunicorn proj.wsgi:application --bind 0.0.0.0:$PORT
