@@ -10,7 +10,7 @@ RUN pip install -r /requirements.txt
 RUN mkdir /proj
 WORKDIR /proj
 
-COPY ./proj /proj
+COPY . .
 
 #collect static files
 RUN python manage.py collectstatic --noinput
