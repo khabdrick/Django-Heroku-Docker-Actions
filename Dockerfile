@@ -11,3 +11,11 @@ RUN mkdir /proj
 WORKDIR /proj
 
 COPY ./proj /proj
+
+
+# add and run as non-root user
+RUN adduser -D myuser
+USER myuser
+
+# run gunicorn
+CMD gunicorn proj.proj.wsgi:application --bind 0.0.0.0:$PORT
