@@ -13,7 +13,7 @@ WORKDIR /proj
 COPY . .
 
 #collect static files
-RUN python manage.py collectstatic --noinput
+# RUN python manage.py collectstatic --noinput
 
 
 # add and run as non-root user
